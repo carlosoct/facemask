@@ -20,11 +20,56 @@
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
-    <script src="js/common.js"></script>
 </head>
 
 <body>
-    <div id="map-face-mask"></div>
+    <div class="content">
+        <aside>
+            <header>
+                <div class="buy-date">
+                    <h2>今日<span></span>為<b></b>購買日</h2>
+                    <h3>
+                        <span class="bd-year"></span>
+                        <span class="bd-month"></span>
+                        <span class="bd-date"></span>
+                    </h3>
+                </div>
+                <div class="point-area">
+                    <label>
+                        <select name="county" class="county">
+                            <option value="default" disabled="" selected="">--- 請選擇縣市 ---</option>
+                            <!-- <option value="台北市">台北市</option>
+                            <option value="新北市">新北市</option> -->
+                        </select>
+                    </label>
+                    <label>
+                        <select name="town" class="town">
+                            <option value="default" disabled="" selected="">--- 請選擇行政區 ---</option>
+                            <!-- <option value="台北市">松山區</option>
+                            <option value="新北市">信義區</option> -->
+                        </select>
+                    </label>
+                </div>
+            </header>
+            <div class="face-mask-info">
+                <ul>
+                    <!-- <li>
+                        <h4>家音藥局</h4>
+                        <div class="clinic-number">02 -37652080</div>
+                        <div class="clinic-address">台北市松山區民生東路5段73號</div>
+                        <div class="clinic-note">口罩販售時段 週一~五 16:00起、週六、日18:00起</div>
+                        <div class="clinic-mask">
+                            <b class="mask-adult">成人口罩數量<span>20000</span></b>
+                            <b class="mask-child">兒童口罩數量<span>20000</span></b>
+                        </div>
+                    </li> -->
+                </ul>
+            </div>
+        </aside>
+        <div id="map-face-mask"></div>
+    </div>
+
+    <script src="js/common.js"></script>
 </body>
 
 </html>
