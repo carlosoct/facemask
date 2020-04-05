@@ -213,7 +213,7 @@ $(function () {
             case 6:
                 monthCHT = "星期六"
                 break;
-            case 7:
+            case 0:
                 monthCHT = "星期日"
                 break;
         }
@@ -227,7 +227,7 @@ $(function () {
         document.querySelector('.bd-year').textContent = year;
         document.querySelector('.bd-month').textContent = month;
         document.querySelector('.bd-date').textContent = date;
-        document.querySelector('.buy-date span').textContent = monthCHT;
+        document.querySelector('.buy-date h2 span').textContent = monthCHT;
         document.querySelector('.buy-date b').textContent = dateCHT;
     };
 
